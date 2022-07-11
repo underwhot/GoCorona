@@ -523,6 +523,8 @@ body::after {
 }
 
 .hero__container {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,6 +640,71 @@ body::after {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin: 60px 0;
+}
+
+.corona {
+  position: absolute;
+  background-image: url("../img/corona.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.6;
+}
+
+.corona_one {
+  width: 70px;
+  height: 70px;
+  bottom: 200px;
+  left: 200px;
+}
+
+.corona_two {
+  width: 45px;
+  height: 45px;
+  top: 220px;
+  left: 300px;
+}
+
+.corona_tree {
+  width: 55px;
+  height: 55px;
+  bottom: 300px;
+  left: 500px;
+}
+
+.corona_four {
+  width: 30px;
+  height: 30px;
+  bottom: 200px;
+  right: 500px;
+}
+
+.corona_five {
+  width: 77px;
+  height: 77px;
+  top: 110px;
+  right: 400px;
+}
+
+.corona_six {
+  width: 44px;
+  height: 44px;
+  top: 150px;
+  left: 400px;
+}
+
+.corona_seven {
+  width: 39px;
+  height: 39px;
+  bottom: 150px;
+  left: 300px;
+}
+
+.corona_eight {
+  width: 88px;
+  height: 88px;
+  top: 300px;
+  right: 400px;
 }
 
 .safe {
@@ -813,6 +880,7 @@ body::after {
 }
 
 .experts {
+  position: relative;
   background-color: #fafbfd;
   padding: 60px 0;
   min-height: 100vh;
@@ -831,6 +899,8 @@ body::after {
 }
 
 .experts__container {
+  position: relative;
+  z-index: 2;
   width: 100%;
 }
 
@@ -1105,6 +1175,7 @@ body::after {
 }
 
 .healthcare {
+  position: relative;
   padding: 60px 0;
   min-height: 100vh;
   display: -webkit-box;
@@ -1117,6 +1188,11 @@ body::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.healthcare__container {
+  position: relative;
+  z-index: 2;
 }
 
 .healthcare__top {
@@ -1444,6 +1520,10 @@ body::after {
 
   .menu__item:not(:last-child) {
     margin: 0 20px 0 0;
+  }
+
+  .corona {
+    display: none;
   }
 
   .safe__container {
